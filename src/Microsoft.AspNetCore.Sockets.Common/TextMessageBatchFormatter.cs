@@ -17,7 +17,6 @@ namespace Microsoft.AspNetCore.Sockets
             int cursor = 1;
             while (cursor < data.Length)
             {
-
                 // Parse the length
                 int length = ParseLength(data, ref cursor);
                 cursor++;
