@@ -108,9 +108,8 @@ namespace Microsoft.AspNetCore.SignalR.Tests
 
                 var received = await ReceiveMessage(connection);
                 
-                Assert.Equal(message, received.Substring(0,message.Length));
+                Assert.Equal(message, received.Substring(0, message.Length));
             }
         }
-
     }
 }
